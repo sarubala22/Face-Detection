@@ -1,0 +1,13 @@
+How to Run:
+
+Install Dependencies: Ensure OpenCV is installed by running:
+
+pip install opencv-python
+
+
+Run the Python File: Save the code in a .py file (e.g., optimized_face_detection.py) and run it:
+
+
+Press 'q' to exit the loop and close the webcam window.
+
+By following these steps and running the code, you should see faster performance for face detection in real-time video from your webcam or video file!
