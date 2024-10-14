@@ -1,0 +1,22 @@
+Key Modifications for Jupyter:
+
+
+* Displaying Video Frames in Jupyter:
+The IPython.display module is used to show the video frames directly in the notebook.
+PIL.Image.fromarray() is used to convert the OpenCV frame (numpy array) to an image format that can be displayed in Jupyter.
+
++ Frame Display:
+clear_output(wait=True) is used to remove the previous frame, and display(img_pil) is used to show the new frame, creating a real-time video effect.
+
+Exit Mechanism:
+Since cv2.waitKey() doesn’t work well in Jupyter for capturing keypresses, you can interrupt the loop manually using a KeyboardInterrupt (e.g., by pressing Stop in the Jupyter interface).
+
+
+How to Run in Jupyter Notebook:
+Install the necessary libraries: pip install opencv-python pillow
+
+Copy the code into a cell and run it.
+
+Stop the video capture by pressing the Stop button (or use Kernel > Interrupt).
+
+This modified version will display the video frames directly in the Jupyter Notebook interface, and you can still use it to detect faces in real-time.
